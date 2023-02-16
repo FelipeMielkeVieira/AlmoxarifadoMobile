@@ -30,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(switchActivityIntent);
     }
 
+    public void esqueciSenha(View view) {
+        Intent switchActivityIntent = new Intent(this, EsqueciSenha1Activity.class);
+        startActivity(switchActivityIntent);
+    }
+
     public void mudarSenha(View view) {
         EditText input = findViewById(R.id.inputSenha);
         ImageButton imageButton = findViewById(R.id.botaoOlho);

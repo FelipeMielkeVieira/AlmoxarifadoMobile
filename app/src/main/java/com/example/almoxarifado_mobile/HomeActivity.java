@@ -20,6 +20,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
+        buscarItens();
         setRecyclerView();
     }
 
@@ -30,5 +31,9 @@ public class HomeActivity extends AppCompatActivity {
 
         adapter = new ProdutoAdapter(lista);
         recyclerView.setAdapter(adapter);
+    }
+
+    private void buscarItens() {
+
     }
 }
